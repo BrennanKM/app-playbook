@@ -4,25 +4,31 @@ The process, prompt, and starter files that took EarnVouch from an empty folder 
 
 ## Start a new app
 
-1. **Make the folder and copy the starter:**
-   ```bash
-   sh ~/Developer/app-playbook/scripts/new-app.sh ~/Developer/<app-slug> "<App Name>"
-   ```
-2. **Fill in the brackets in [KICKOFF.md](KICKOFF.md)**: the pitch, the users, the platforms, the guardrails, and the risk tier.
-3. **Open a new Claude Code session in the new folder** and paste the filled-in prompt as the first message.
-4. **Start [DAY-ONE.md](DAY-ONE.md)'s paperwork the same day**, in parallel: the company, D-U-N-S, and the store accounts.
-5. **Then the loop:** review the PR, merge, say "merged", and answer the batched questions.
+**1. Intake session (any length, messy is fine).** In the Claude desktop app, open a new Code session with the folder set to `~/Developer/app-playbook`. Paste the prompt from [INTAKE.md](INTAKE.md), then give it all your context: notes, chats, screenshots, links, and vault notes by name. It interviews you with the question tool, pressure-tests the idea, and writes the finished master prompt to `intake/<app-slug>/kickoff.md`, with the context beside it. Nothing there is committed.
+
+**2. Make the app's empty folder:**
+```bash
+mkdir ~/Developer/<app-slug>
+```
+
+**3. Build session (clean start).** Open a new Code session with the folder set to `~/Developer/<app-slug>`. Paste the whole of `intake/<app-slug>/kickoff.md` as the first message. It copies the starter and your context in, saves the prompt to `docs/kickoff.md`, and starts the loop: it opens a PR, you merge it and say "merged", then you answer its questions.
+
+**4. The same day,** start [DAY-ONE.md](DAY-ONE.md)'s paperwork: the company, D-U-N-S, and the store accounts.
+
+To skip intake, fill in [KICKOFF.md](KICKOFF.md)'s brackets by hand and go straight to step 2.
 
 ## What's here
 
 | File | What it is |
 |---|---|
+| [INTAKE.md](INTAKE.md) | The prompt for the intake session, which turns your idea and context into the finished kickoff prompt |
 | [KICKOFF.md](KICKOFF.md) | The master prompt for the first message of a new project (rebuilt; the original was lost) |
 | [PROCESS.md](PROCESS.md) | How the build ran, phase by phase; the rhythm, the record-keeping, the agents, and lessons from EarnVouch |
 | [DAY-ONE.md](DAY-ONE.md) | Company and account paperwork to start on day one |
 | [STACK.md](STACK.md) | The default stack and code rules, from EarnVouch's ADRs |
 | [starter/](starter/) | Files copied into each new repository: `CLAUDE.md`, permissions, agents, PR and issue templates, ADR template, mocks register, doc skeletons |
-| [scripts/new-app.sh](scripts/new-app.sh) | Copies `starter/` into a new folder and fills in the simple placeholders |
+| [scripts/new-app.sh](scripts/new-app.sh) | Copies `starter/` into a new folder and fills in the simple placeholders (the build session runs it) |
+| `intake/` | Each intake's output: never committed |
 
 ## Keeping it current
 

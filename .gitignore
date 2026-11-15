@@ -1,0 +1,4 @@
+# Intake sessions' output: one app's context, prompt, and materials. Never committed
+# (INTAKE.md); the build session copies what it needs into the app's own repository.
+intake/
+.DS_Store

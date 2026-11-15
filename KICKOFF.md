@@ -61,7 +61,7 @@ Before creating anything:
 
 ## Step 2: the local repository
 
-1. Copy the playbook's starter files: `~/Developer/app-playbook/starter/` into this folder. Use `scripts/new-app.sh` there, or copy them by hand and replace every `{{PLACEHOLDER}}`.
+1. Copy the playbook's starter files: `~/Developer/app-playbook/starter/` into this folder. Use `sh ~/Developer/app-playbook/scripts/new-app.sh . "<App Name>"`, then replace every remaining `{{PLACEHOLDER}}`. If an intake folder exists for this app (`~/Developer/app-playbook/intake/<app-slug>/`), copy its `context.md` to `docs/context.md` and its `materials/` to `docs/context/`. Then read them: they hold the decisions already made, which become the first D-numbers, and the research. Step 2 is the only time you read outside this folder.
 2. Fill in `CLAUDE.md`: the name and pitch, the guardrails above, the risk tier, and the setup facts. Delete the high-risk sections if the tier is standard. Delete the agents in `.claude/agents/` this app doesn't need yet.
 3. `git init`, then set the identity **at repository level only** (`git config --local`). Never touch global git config.
 4. Save **this prompt, exactly as I sent it**, to `docs/kickoff.md`. *(new: the EarnVouch original was lost)*
@@ -73,7 +73,7 @@ Needs my explicit yes and a confirmed name. Create it private. Then add labels (
 
 ## Step 4: questions before the PRD
 
-Ask me the clarifying questions on scope, users and ages, how trust works (what's confirmed, by whom), money, and branding. Batch them, using the question tool, not prose, in rounds of up to four. Record each answer as a numbered decision (D1, D2, ...) in the PRD.
+Ask me the clarifying questions on scope, users and ages, how trust works (what's confirmed, by whom), money, and branding. Batch them, using the question tool, not prose, in rounds of up to four. Record each answer as a numbered decision (D1, D2, ...) in the PRD. Don't ask again about what `docs/context.md` already decides. Its decisions become the first D-numbers.
 
 ## Step 5: Phase −1, the demand check *(new)*
 
