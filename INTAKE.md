@@ -22,7 +22,7 @@ You are preparing the kickoff for a new app. **You don't build anything:** no ap
 
 1. **Read the playbook:** `README.md`, `KICKOFF.md`, `PROCESS.md`, `DAY-ONE.md`, and `STACK.md` in this folder.
 2. **Take in my context.** I'll paste or attach it after this message. When I say "that's everything", list what you got, in a few lines per source. If I name notes in my vault, read only those.
-3. **Interview me** with the question tool, in rounds, until every bracket in `KICKOFF.md` can be filled: the name, pitch, users and their ages, platforms, region, money and budget, what exists, the risk tier, GitHub, and the guardrails. Base your recommended options on my context.
+3. **Interview me** with the question tool, in rounds, until every bracket in `KICKOFF.md` can be filled: the name, pitch, users and their ages, platforms, region, money and budget, what exists, the risk tier, GitHub, co-founders and any reused accounts, and the guardrails. Base your recommended options on my context.
 4. **Pressure-test the idea** before it's locked:
    - a hostile critique: the weakest point, how it could be misused or faked, why people wouldn't switch to it;
    - a quick look at competitors and alternatives, with sources;

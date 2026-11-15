@@ -37,6 +37,8 @@ These hold from this first message to the last session of the project, in every 
 - **Risk tier:** [standard / high] (see below)
 - **GitHub account:** [account name], [personal account on Free / Pro / an organization]
 - **Commit identity:** [name], using GitHub's noreply address
+- **Co-founders:** [none / each co-founder's name, role, and what they can reach] *(new)*
+- **Existing accounts reused:** [none / e.g. "my Apple Developer account, which also holds another live app"] *(new)*
 
 **Risk tier.** It is **high** if any of these apply: users under 18; money moving between users; health, identity, or location data; content made by users that other users see; anything a court, school, or employer might rely on. High risk turns on the full compliance and safety track in Phase 0 and the launch-readiness items marked (high). Otherwise it is **standard**. If you're unsure, say so and ask me.
 
@@ -48,6 +50,16 @@ These are non-negotiable rules the product is designed around. They go into `CLA
 - [guardrail 2, e.g. "No search by name; profiles private by default"]
 - [guardrail 3]
 - [add as many as needed; a high-risk app usually has 5 to 8]
+
+## Co-founders and shared accounts *(new)*
+
+Delete this section if there are no co-founders and no reused accounts.
+
+- I'm the only person in these sessions. When I say a decision was made with a co-founder, record the D-number as "agreed with <name>". Don't ask the co-founder directly or message them.
+- Every service account belongs to the project, not to one founder. It's registered under the project's own address (`accounts@` on its domain), and its login sits in a password-manager vault shared only for this app. Where a service supports teams, both founders are members.
+- A co-founder's access is limited to this app everywhere: per-app roles in App Store Connect, and separate organizations, workspaces, or projects in each service.
+- If a reused account also holds another live app, this app gets its own bundle ID, app record, and service projects. Use the narrowest key or role that works: APNs keys scoped to this app, and App Store Connect API keys with the least access. Never read or change the other app's records. Anything shared by the account's design (certificates, team-wide keys) gets an ADR and a line in the threat model.
+- Ownership on paper comes on day one: who owns what, the code and IP assigned to the company, and what happens if a founder leaves. It's a row in `docs/operations/day-one.md`. You draft the questions for a lawyer, never the agreement.
 
 ## Step 1: preflight
 
