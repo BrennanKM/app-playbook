@@ -1,0 +1,86 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.p8
+*.p12
+*.key
+*.jks
+*.keystore
+*.mobileprovision
+google-services.json
+GoogleService-Info.plist
+
+# Claude Code per-machine settings
+.claude/settings.local.json
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+*.tsbuildinfo
+coverage/
+dist/
+build/
+.turbo/
+.cache/
+
+# Expo / React Native
+.expo/
+.expo-shared/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+*.jsbundle
+*.hbc
+
+# iOS build outputs
+ios/Pods/
+ios/build/
+DerivedData/
+xcuserdata/
+*.xcworkspace/xcuserdata/
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcarchive
+
+# Android build outputs
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.cxx/
+.gradle/
+*.apk
+*.aab
+*.hprof
+captures/
+
+# Drafts for the owner (agents write here): working copies, not committed
+docs/**/drafts/
