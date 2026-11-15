@@ -21,8 +21,12 @@ Phases have **exit criteria, not dates.** Dates come once scaffolding shows the 
 1. The assistant works on one branch per deliverable, opens a PR, and ends its message with **what the owner needs to do, in order** ("review and merge #12", "buy the domain at the last screen", "type the code in Terminal tab c3").
 2. The owner reviews and merges, then says "merged".
 3. The assistant checks the merge, deletes the branch, updates the docs, and starts the next step.
-4. Questions come in batches through the question tool, never as a wall of prose. The answers become numbered decisions.
+4. **Every question goes through the question tool**, in every phase and session, never in prose. They come in batches with a recommended option, and the answers become numbered decisions.
 5. Anything remote, paid, legal, or about safety waits for an explicit yes. Everything else the assistant decides and records, and the owner can overrule it.
+6. **When a better tool, service, or connector would improve the result, the assistant suggests it** (what, why, cost, alternatives) instead of working around its absence. A "no" is recorded, along with the quality lost.
+7. **Rules heal themselves.** A rule that proves wrong, missing, or in the way gets a proposed change through the question tool, then a PR to `CLAUDE.md`, and a line under "For the playbook" in `docs/history.md`.
+
+These three rules (questions through the tool, suggest rather than work around, self-healing) are section 0 of every project's `CLAUDE.md`. They keep the prompt growing with the project instead of going rigid.
 
 This loop is the engine. Most owner messages during EarnVouch's build were one word: "merged".
 

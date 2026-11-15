@@ -26,4 +26,4 @@ The process, prompt, and starter files that took EarnVouch from an empty folder 
 
 ## Keeping it current
 
-When a project teaches something new, add it here: a lesson in `PROCESS.md`, a rule in `starter/CLAUDE.md`, or a default in `STACK.md`. Commit each change with the date and the project it came from. Nothing in this repository is specific to one app, and nothing secret goes in: no keys, IDs, contact details, or users' data.
+Each project keeps a "For the playbook" list in its `docs/history.md` (its `CLAUDE.md`, section 0, rule 3). When a project teaches something new, carry those lines here: a lesson in `PROCESS.md`, a rule in `starter/CLAUDE.md`, or a default in `STACK.md`. Commit each change with the date and the project it came from. Nothing in this repository is specific to one app, and nothing secret goes in: no keys, IDs, contact details, or users' data.
