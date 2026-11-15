@@ -11,7 +11,7 @@ The process, prompt, and starter files that took EarnVouch from an empty folder 
 mkdir ~/Developer/<app-slug>
 ```
 
-**3. Build session (clean start).** Open a new Code session with the folder set to `~/Developer/<app-slug>`. Paste the whole of `intake/<app-slug>/kickoff.md` as the first message. It copies the starter and your context in, saves the prompt to `docs/kickoff.md`, and starts the loop: it opens a PR, you merge it and say "merged", then you answer its questions.
+**3. Build session (clean start).** Open a new Code session with the folder set to `~/Developer/<app-slug>`. Paste the whole of `intake/<app-slug>/kickoff.md` as the first message. Copy it with `LANG=en_US.UTF-8 pbcopy < ~/Developer/app-playbook/intake/<app-slug>/kickoff.md`: without the UTF-8 setting, characters like "…" and "−" turn into "?". It copies the starter and your context in, saves the prompt to `docs/kickoff.md`, and starts the loop: it opens a PR, you merge it and say "merged", then you answer its questions.
 
 **4. The same day,** start [DAY-ONE.md](DAY-ONE.md)'s paperwork: the company, D-U-N-S, and the store accounts.
 
