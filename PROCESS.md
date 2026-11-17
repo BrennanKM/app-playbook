@@ -77,7 +77,7 @@ This loop is the engine. Most owner messages during EarnVouch's build were one w
 ## Getting to the store
 
 - **Do an early review build** (EarnVouch's D154). A build goes through full App Store review with its release held, so Apple's objections come weeks early.
-- **The review account** (ADR 0017): a made-up account with a fixed code, set on the server only while a version is in review. **Clean it up only once App Store Connect shows "Pending Developer Release",** never at "approved" in an email.
+- **The review account:** give Apple a made-up test account for the review, and remove it afterwards. **Clean it up only once App Store Connect shows "Pending Developer Release",** never at "approved" in an email.
 - **Manual release, phased release off** for the first versions, so the owner chooses the moment.
 - **Store answers are truthful and conservative**, and checked against the privacy policy. If the two disagree, one of them is wrong.
 - **Screenshots:** design them deliberately: a different color and layout per slide, big type, crops of the real screens. EarnVouch's first set read as "repetitive and AI" and was redone on launch day. Screenshots can't change without a new version.
